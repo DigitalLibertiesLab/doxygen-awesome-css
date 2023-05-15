@@ -27,16 +27,17 @@ SOFTWARE.
 
  */
 
-html {
+ html {
     /* side nav width. MUST be = `TREEVIEW_WIDTH`.
      * Make sure it is wide enough to contain the page title (logo + title + version)
      */
-    --side-nav-fixed-width: 335px;
+    --side-nav-fixed-width: 350px;
     --menu-display: none;
 
-    --top-height: 120px;
-    --toc-sticky-top: -25px;
+    --top-height: 0px;
+    --toc-sticky-top: 0px;
     --toc-max-height: calc(100vh - 2 * var(--spacing-medium) - 25px);
+    overflow: hidden;
 }
 
 #projectname {
@@ -57,22 +58,13 @@ html {
     }
 
     #nav-tree, #side-nav {
-        height: calc(100vh - var(--top-height)) !important;
+        /* height: calc(100vh - var(--top-height)) !important; */
     }
 
     #nav-tree {
         padding: 0;
     }
 
-    #top {
-        display: block;
-        border-bottom: none;
-        height: var(--top-height);
-        margin-bottom: calc(0px - var(--top-height));
-        max-width: var(--side-nav-fixed-width);
-        overflow: hidden;
-        background: var(--side-nav-background);
-    }
     #main-nav {
         float: left;
         padding-right: 0;

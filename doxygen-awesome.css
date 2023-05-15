@@ -838,13 +838,13 @@ html.dark-mode iframe#MSearchResults {
 }
 
 #nav-tree .arrow {
-    opacity: var(--side-nav-arrow-opacity);
+    /* opacity: var(--side-nav-arrow-opacity); */
 }
 
 .arrow {
     color: inherit;
     cursor: pointer;
-    font-size: 45%;
+    font-size: 67%;
     vertical-align: middle;
     margin-right: 2px;
     font-family: serif;
@@ -853,7 +853,7 @@ html.dark-mode iframe#MSearchResults {
 }
 
 #nav-tree div.item:hover .arrow, #nav-tree a:focus .arrow {
-    opacity: var(--side-nav-arrow-hover-opacity);
+    /* opacity: var(--side-nav-arrow-hover-opacity); */
 }
 
 #nav-tree .selected a {
