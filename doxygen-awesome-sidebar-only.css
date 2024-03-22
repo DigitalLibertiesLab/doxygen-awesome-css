@@ -31,11 +31,11 @@ html {
     /* side nav width. MUST be = `TREEVIEW_WIDTH`.
      * Make sure it is wide enough to contain the page title (logo + title + version)
      */
-    --side-nav-fixed-width: 350px;
+    --side-nav-fixed-width: 370px;
     --menu-display: none;
 
-    --top-height: 0px;
-    --toc-sticky-top: -90px;
+    --top-height: 170px;
+    --toc-sticky-top: 20px;
     --toc-max-height: calc(100vh - 2 * var(--spacing-medium) - 25px);
     overflow: hidden;
 }
@@ -68,6 +68,8 @@ html {
     #top {
         display: block;
         border-bottom: none;
+        height: 170px;
+        margin-bottom: -170px;
         max-width: var(--side-nav-fixed-width);
         overflow: hidden;
         background: var(--side-nav-background);
@@ -95,7 +97,7 @@ html {
     #doc-content {
         height: calc(100vh - 31px) !important;
         padding-bottom: calc(3 * var(--spacing-large));
-        padding-top: calc(var(--top-height) - 80px);
+        padding-top: 0px;
         box-sizing: border-box;
         margin-left: var(--side-nav-fixed-width) !important;
     }
