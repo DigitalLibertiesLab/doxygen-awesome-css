@@ -72,7 +72,9 @@ class DoxygenAwesomeDarkModeToggle extends HTMLElement {
                 });
 
                 $(document).ready(function(){
-                    document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+                    var td = document.getElementById("MSearchBox").parentNode.parentNode.insertCell();
+                    td.appendChild(toggleButton)
+                    //<!-- document.getElementById("MSearchBox").parentNode.appendChild(toggleButton) //-->
                 })
                 $(window).resize(function(){
                     document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
